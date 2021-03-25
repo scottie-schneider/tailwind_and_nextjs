@@ -17,18 +17,22 @@ export default function Home() {
       </Head>
       <main className="flex flex-col items-center justify-center flex-1 px-20 text-center">
         {/* Erin photo card */}
-        <div className="flex">
+        <div className="flex items-center m-20 border border-gray-200 rounded shadow hover:shadow-lg p-2">
           <Image
+            className="rounded mr-4"
             src="https://randomuser.me/api/portraits/women/26.jpg"
             alt=""
             width={130}
             height={130}
           />
-          <div className="content">
-            <h2>Lynn Cool</h2>
-            <p>Director of Marketing</p>
+          <div className="text-gray-700 flex flex-col items-start ml-3">
+            <h2 className="font-bold text-2xl text-gray-900">Erin Lindford</h2>
+            <div className="text-sm">Product Engineer</div>
+            <div className="text-sm">erinlindford@example.com</div>
+            <div className="text-sm">(555) 765-4323</div>
           </div>
         </div>
+        {/* End photo card */}
         <h1 className="text-6xl font-bold">
           Welcome to{" "}
           <a className="text-blue-600" href="https://nextjs.org">
