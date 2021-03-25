@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 
 // 1. Add the html
 // 2. layout the things
@@ -14,8 +15,20 @@ export default function Home() {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <main className="flex flex-col items-center justify-center flex-1 px-20 text-center">
+        {/* Erin photo card */}
+        <div className="flex">
+          <Image
+            src="https://randomuser.me/api/portraits/women/26.jpg"
+            alt=""
+            width={130}
+            height={130}
+          />
+          <div className="content">
+            <h2>Lynn Cool</h2>
+            <p>Director of Marketing</p>
+          </div>
+        </div>
         <h1 className="text-6xl font-bold">
           Welcome to{" "}
           <a className="text-blue-600" href="https://nextjs.org">
