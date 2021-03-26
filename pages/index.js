@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import resizeHeight from "../hooks/resizeHeight";
 
 // 1. Add the html
 // 2. layout the things
@@ -9,100 +10,186 @@ import Image from "next/image";
 // 6. fun element
 // 7. responsive
 export default function Home() {
+  resizeHeight();
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <div className="text-gray-700 flex bg-gradient-to-tr from-white to-gray-200 flex-col items-center justify-center min-h-screen py-2">
       <Head>
-        <title>Test from mac air</title>
+        <title>Hello! I'm Scottie</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className=" flex flex-col items-center justify-center flex-1 px-20 text-center">
-        {/* Erin photo card */}
-        <div className="group flex items-center m-20 border border-gray-200 rounded shadow hover:shadow-lg p-2">
-          <Image
-            className="rounded mr-4"
-            src="https://randomuser.me/api/portraits/women/26.jpg"
-            alt=""
-            width={130}
-            height={130}
-          />
-          <div className="text-gray-700 flex flex-col items-start ml-3">
-            <h2 className="transition-colors duration-300 group-hover:text-red-600 font-bold text-2xl text-gray-900">
-              Erin Lindford
-            </h2>
-            <div className="text-sm">Product Engineer</div>
-            <div className="text-sm">erinlindford@example.com</div>
-            <div className="text-sm">(555) 765-4323</div>
+      <div className="h-screen flex flex-col items-center justify-center">
+        <h2 className="flex text-5xl lg:text-6xl font-extrabold leading-snug mb-4">
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-teal-500">
+            Hello, I'm
+          </span>
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-teal-500 via-purple-600 to-purple-500">
+            &nbsp;Scottie
+          </span>
+        </h2>
+        <p className="text-lg lg:text-2xl mb-12 text-gray-700">
+          Product, Designer, Developer, Mover.
+        </p>
+      </div>
+      {/* End full header */}
+      <div className="block w-full bg-purple-700">
+        <div className="relative container mx-auto px-8 text-xl">
+          <h2 className="text-4xl lg:text-6xl font-bold text-white mt-20 mb-10">
+            So who am I anyway?
+          </h2>
+          <div className="lg:flex lg:space-x-16">
+            <div className="lg:w-2/3 lg:mb-0 lg:p-16 mb-12 p-8 bg-white rounded text-gray-800 shadow-2xl">
+              <p className="mb-8">
+                I am many things, but if you had to label me with anything -
+                call me a craftsman. I'm always in the beginner mindset and
+                would much rather be confronted with something new that I suck
+                at, than something I've mastered.
+                <strong className="font-bold text-teal-500">
+                  &nbsp;Always learning, always improving.
+                </strong>
+              </p>
+              <p className="mb-8">
+                As an entrepreneur, I've founded 2 successful bootstrapped
+                startups.{" "}
+                <a
+                  className="text-blue-500 hover:underline"
+                  href="https://gofetch.it"
+                  target="_blank"
+                >
+                  FollowupEdge
+                </a>
+                , and{" "}
+                <a
+                  className="text-blue-500 hover:underline"
+                  href="https://welcome.org"
+                  target="_blank"
+                >
+                  Welcome
+                </a>
+                . I built FollowupEdge in my basement, reaching 50K MRR in the
+                first year. We were aquired by Inventive Ventures and rebranded
+                as GoFetchIt. The second, Welcome, grew to over 100k MRR in a
+                year and a half.
+              </p>
+              <p className="mb-8">
+                What I'm most proud of is what the people that work with me say
+                about me.
+              </p>
+            </div>
           </div>
         </div>
-        {/* End photo card */}
-        <h1 className="text-6xl font-bold">
-          Welcome to{" "}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
-
-        <p className="mt-3 text-2xl">
-          Get started by editing{" "}
-          <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">
-            pages/index.js
-          </code>
-        </p>
-
-        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      </div>
+      {/* Co workers/reviews section */}
+      <div className="container mx-auto px-8">
+        <div className="relative leading-loose mb-16 lg:mb-32">
+          <h2 className="mt-20 text-3xl lg:text-6xl text-center font-bold text-gray-800">
+            What my co-workers say about me
+          </h2>
+          <div className="absolute left-0 top-0 w-1/3 h-2 bg-gradient-to-r from-blue-400 to-purple-400 rounded transform -translate-y-5"></div>
+          <div className="absolute right-0 bottom-0 w-1/3 h-2 bg-gradient-to-r from-blue-400 to-purple-400 rounded transform translate-y-5"></div>
         </div>
-      </main>
-
-      <footer className="flex items-center justify-center w-full h-24 border-t">
-        <a
-          className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
-        </a>
-      </footer>
+        <div className="lg:col-span-2">
+          <ul className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:gap-x-8">
+            {/* Review Card 1*/}
+            <li>
+              <div className="space-y-4">
+                <div className="aspect-w-3 aspect-h-2">
+                  <img
+                    className="object-cover shadow-lg rounded-lg"
+                    src="https://media-exp1.licdn.com/dms/image/C4E03AQFqtLChP4wjNA/profile-displayphoto-shrink_800_800/0/1553317472543?e=1622073600&v=beta&t=Nc70Eulhrk6PLz4Vc-d3tMO3TZFHWao-3AejzMHEXyw"
+                    alt=""
+                  />
+                </div>
+                <div className="text-lg leading-6 font-medium space-y-1">
+                  <h3>Sebastian Garces</h3>
+                  <p className="text-indigo-600">Lead Dev</p>
+                </div>
+                <div className="text-lg">
+                  <p className="text-gray-500">
+                    Scottie is the type of person you want to surround yourself
+                    with. He's able to see opportunities in every challenge
+                    presented to him.
+                  </p>
+                </div>
+              </div>
+            </li>
+            {/* Review Card 2 */}
+            <li>
+              <div className="space-y-4">
+                <div className="aspect-w-3 aspect-h-2">
+                  <img
+                    className="object-cover shadow-lg rounded-lg"
+                    src="https://media-exp1.licdn.com/dms/image/C4D35AQGxMgoJPQw7qw/profile-framedphoto-shrink_800_800/0/1603920413941?e=1616878800&v=beta&t=w1Eo7T0_SOtRdxx2MpaRDfIkk9K1DCvIFKJx65DS1YE"
+                    alt=""
+                  />
+                </div>
+                <div className="text-lg leading-6 font-medium space-y-1">
+                  <h3>Vital Boisset</h3>
+                  <p className="text-indigo-600">Product Designer</p>
+                </div>
+                <div className="text-lg">
+                  <p className="text-gray-500">
+                    Scottie was a pleasure to work with. It was inspiring to see
+                    him manage three Zoom meetings, working on UX, Frontend and
+                    Backend simultaneously. Great to have around when the goal
+                    is to ship a product! I look forward to the next project.
+                  </p>
+                </div>
+              </div>
+            </li>
+            {/* End Review Card 2 */}
+            {/* Review Card 3 */}
+            <li>
+              <div className="space-y-4">
+                <div className="aspect-w-3 aspect-h-2">
+                  <img
+                    className="object-cover shadow-lg rounded-lg"
+                    src="https://media-exp1.licdn.com/dms/image/C4D35AQGxMgoJPQw7qw/profile-framedphoto-shrink_800_800/0/1603920413941?e=1616878800&v=beta&t=w1Eo7T0_SOtRdxx2MpaRDfIkk9K1DCvIFKJx65DS1YE"
+                    alt=""
+                  />
+                </div>
+                <div className="text-lg leading-6 font-medium space-y-1">
+                  <h3>Vital Boisset</h3>
+                  <p className="text-indigo-600">Product Designer</p>
+                </div>
+                <div className="text-lg">
+                  <p className="text-gray-500">
+                    Scottie was a pleasure to work with. It was inspiring to see
+                    him manage three Zoom meetings, working on UX, Frontend and
+                    Backend simultaneously. Great to have around when the goal
+                    is to ship a product! I look forward to the next project.
+                  </p>
+                </div>
+              </div>
+            </li>
+            {/* End Review Card 3 */}
+            {/* Review Card 4 */}
+            <li>
+              <div className="space-y-4">
+                <div className="aspect-w-3 aspect-h-2">
+                  <img
+                    className="object-cover shadow-lg rounded-lg"
+                    src="https://media-exp1.licdn.com/dms/image/C4D35AQGxMgoJPQw7qw/profile-framedphoto-shrink_800_800/0/1603920413941?e=1616878800&v=beta&t=w1Eo7T0_SOtRdxx2MpaRDfIkk9K1DCvIFKJx65DS1YE"
+                    alt=""
+                  />
+                </div>
+                <div className="text-lg leading-6 font-medium space-y-1">
+                  <h3>Vital Boisset</h3>
+                  <p className="text-indigo-600">Product Designer</p>
+                </div>
+                <div className="text-lg">
+                  <p className="text-gray-500">
+                    Scottie was a pleasure to work with. It was inspiring to see
+                    him manage three Zoom meetings, working on UX, Frontend and
+                    Backend simultaneously. Great to have around when the goal
+                    is to ship a product! I look forward to the next project.
+                  </p>
+                </div>
+              </div>
+            </li>
+            {/* End Review Card 4 */}
+          </ul>
+        </div>
+      </div>
     </div>
   );
 }
