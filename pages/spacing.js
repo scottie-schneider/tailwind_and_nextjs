@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import resizeHeight from "../hooks/resizeHeight";
 
 export default function Spacing() {
