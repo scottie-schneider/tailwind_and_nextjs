@@ -88,7 +88,7 @@ export default function Home() {
           <div className="absolute right-0 bottom-0 w-1/3 h-2 bg-gradient-to-r from-blue-400 to-purple-400 rounded transform translate-y-5"></div>
         </div>
         <div className="lg:col-span-2">
-          <ul className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:gap-x-8">
+          <ul className="space-y-12 sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:gap-x-8">
             {/* Review Card 1*/}
             <li>
               <div className="space-y-4">
@@ -143,21 +143,16 @@ export default function Home() {
                 <div className="aspect-w-3 aspect-h-2">
                   <img
                     className="object-cover shadow-lg rounded-lg"
-                    src="https://media-exp1.licdn.com/dms/image/C4D35AQGxMgoJPQw7qw/profile-framedphoto-shrink_800_800/0/1603920413941?e=1616878800&v=beta&t=w1Eo7T0_SOtRdxx2MpaRDfIkk9K1DCvIFKJx65DS1YE"
+                    src="https://scontent.feoh4-2.fna.fbcdn.net/v/t1.0-9/160617082_10159288548858259_5228251437238121054_o.jpg?_nc_cat=102&ccb=1-3&_nc_sid=09cbfe&_nc_eui2=AeG2NMuNf3siTxddFGBwfMHwwG4oq-wxaQzAbiir7DFpDJ_ZpJBEofdKfCHUjCIh-NxE78tMnOt5N_1cVo5V5ydy&_nc_ohc=POTgSQ1Oi-MAX98Mb8T&_nc_ht=scontent.feoh4-2.fna&oh=8bbc43daf83fca32c014c57a0225e2db&oe=6083398B"
                     alt=""
                   />
                 </div>
                 <div className="text-lg leading-6 font-medium space-y-1">
-                  <h3>Vital Boisset</h3>
-                  <p className="text-indigo-600">Product Designer</p>
+                  <h3>Daniela Marmolejo</h3>
+                  <p className="text-indigo-600">Entrepreneur</p>
                 </div>
                 <div className="text-lg">
-                  <p className="text-gray-500">
-                    Scottie was a pleasure to work with. It was inspiring to see
-                    him manage three Zoom meetings, working on UX, Frontend and
-                    Backend simultaneously. Great to have around when the goal
-                    is to ship a product! I look forward to the next project.
-                  </p>
+                  <p className="text-gray-500">Scottie is the best.</p>
                 </div>
               </div>
             </li>
@@ -168,20 +163,19 @@ export default function Home() {
                 <div className="aspect-w-3 aspect-h-2">
                   <img
                     className="object-cover shadow-lg rounded-lg"
-                    src="https://media-exp1.licdn.com/dms/image/C4D35AQGxMgoJPQw7qw/profile-framedphoto-shrink_800_800/0/1603920413941?e=1616878800&v=beta&t=w1Eo7T0_SOtRdxx2MpaRDfIkk9K1DCvIFKJx65DS1YE"
+                    src="https://scontent.feoh4-2.fna.fbcdn.net/v/t1.0-9/155835120_112897910852748_596132181960065261_o.jpg?_nc_cat=102&ccb=1-3&_nc_sid=09cbfe&_nc_eui2=AeFKljH7AeRTPbhlo8ghuVvljuAmyE-m8kWO4CbIT6byRWHNAAUUu04cBW8KAtWmsV-VC53LhZm2rV712O_EicD8&_nc_ohc=hdCUe1KTrT4AX8JCch5&_nc_ht=scontent.feoh4-2.fna&oh=7130d62e97566c3c1e9ab0ab5bef3af6&oe=60833669"
                     alt=""
                   />
                 </div>
                 <div className="text-lg leading-6 font-medium space-y-1">
-                  <h3>Vital Boisset</h3>
-                  <p className="text-indigo-600">Product Designer</p>
+                  <h3>Cami Arango</h3>
+                  <p className="text-indigo-600">Human Resources</p>
                 </div>
                 <div className="text-lg">
                   <p className="text-gray-500">
-                    Scottie was a pleasure to work with. It was inspiring to see
-                    him manage three Zoom meetings, working on UX, Frontend and
-                    Backend simultaneously. Great to have around when the goal
-                    is to ship a product! I look forward to the next project.
+                    Scott is an extremely disciplined, career focused worker
+                    with an acute attention to detail. I would recommend Scott
+                    in any professional capacity.
                   </p>
                 </div>
               </div>
