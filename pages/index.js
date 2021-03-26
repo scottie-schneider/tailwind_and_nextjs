@@ -15,9 +15,9 @@ export default function Home() {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex flex-col items-center justify-center flex-1 px-20 text-center">
+      <main className=" flex flex-col items-center justify-center flex-1 px-20 text-center">
         {/* Erin photo card */}
-        <div className="flex items-center m-20 border border-gray-200 rounded shadow hover:shadow-lg p-2">
+        <div className="group flex items-center m-20 border border-gray-200 rounded shadow hover:shadow-lg p-2">
           <Image
             className="rounded mr-4"
             src="https://randomuser.me/api/portraits/women/26.jpg"
@@ -26,7 +26,9 @@ export default function Home() {
             height={130}
           />
           <div className="text-gray-700 flex flex-col items-start ml-3">
-            <h2 className="font-bold text-2xl text-gray-900">Erin Lindford</h2>
+            <h2 className="transition-colors duration-300 group-hover:text-red-600 font-bold text-2xl text-gray-900">
+              Erin Lindford
+            </h2>
             <div className="text-sm">Product Engineer</div>
             <div className="text-sm">erinlindford@example.com</div>
             <div className="text-sm">(555) 765-4323</div>
