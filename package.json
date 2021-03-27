@@ -9,9 +9,11 @@
   },
   "dependencies": {
     "@tailwindcss/aspect-ratio": "^0.2.0",
-    "next": "latest",
+    "next": "^10.0.9",
+    "now": "^21.0.1",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "vercel": "^21.3.3"
   },
   "devDependencies": {
     "@tailwindcss/jit": "0.1.3",
