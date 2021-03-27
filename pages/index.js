@@ -21,12 +21,12 @@ export default function Home() {
     let codeSnippet =
         "function recurse() { \n     // function code\nrecurse();\n// function code\n}\nrecurse();";
     return (
-        <div className="text-gray-700 flex bg-gradient-to-tr from-white to-gray-200 flex-col items-center justify-center min-h-screen py-2">
+        <div className="text-gray-700 bg-gray-100 flex-col items-center justify-center min-h-screen py-2">
             <Head>
                 <title>Hello! I'm Scottie</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div className="h-screen flex flex-col items-center justify-center">
+            <div className="h-screen relative flex bg-gradient-to-tr from-white to-gray-200 flex flex-col items-center justify-center">
                 <h2 className="flex text-5xl lg:text-6xl font-extrabold leading-snug mb-4">
                     <span className="bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-teal-500">
                         Hello, I'm
@@ -41,17 +41,13 @@ export default function Home() {
             </div>
             {/* End full header */}
 
-            {/* Overview section */}
-            <div className="relative flex flex-col ">
+            <div className="relative bg-purple-700 w-full py-24">
                 <img
-                    className="object-cover w-1/2 mx-auto z-40 shadow-lg rounded-lg"
+                    className=" transform -translate-y-40 object-cover w-1/2 mx-auto z-40 shadow-lg rounded-lg"
                     src="https://scontent.feoh1-1.fna.fbcdn.net/v/t1.0-9/165618272_280396350140021_2599161582639439013_o.jpg?_nc_cat=106&ccb=1-3&_nc_sid=730e14&_nc_eui2=AeG49l1QMAHdbavO-O9Ggxxo7qIe-ecnNH7uoh755yc0fkIiU05eyfl1HUYHRnt7_zEOUTx4mdzq_V6D-dM8RPZZ&_nc_ohc=Prs3khQiap0AX-yY75v&_nc_ht=scontent.feoh1-1.fna&oh=58da0e92f792bd35c8b060b7e07bd3b8&oe=608404A9"
                     alt=""
                 />
-                <div className="absolute bottom-0 bg-purple-700 h-64 inset-x-0"></div>
-            </div>
-            <div className="relative bg-purple-700 w-full py-24">
-                <div className="absolute bottom-0 bg-gradient-to-tr from-white to-gray-200  h-64 inset-x-0"></div>
+                <div className="absolute bottom-0 bg-gray-100 h-64 inset-x-0"></div>
                 <div className="relative mx-auto px-6 lg:px-0 container">
                     <h2 className="mb-10 text-purple-100 font-bold text-6xl">
                         So who am I, anyway?
