@@ -143,7 +143,7 @@ export default function Home() {
             </div>
             {/* Overview section */}
             {/* Co workers/reviews section */}
-            <div className="container mx-auto px-8">
+            <div className="container mx-auto px-8 pb-20">
                 <div className="relative leading-loose mb-16 lg:mb-32">
                     <h2 className="mt-20 text-3xl lg:text-6xl text-center font-bold text-gray-800">
                         What my co-workers say about me
@@ -156,11 +156,12 @@ export default function Home() {
                         {/* Review Card 1*/}
                         <li>
                             <div className="space-y-4">
-                                <div className="aspect-w-3 aspect-h-2">
-                                    <img
+                                <div className="aspect-w-3 aspect-h-3">
+                                    <Image
                                         className="object-cover shadow-lg rounded-lg"
-                                        src="https://media-exp1.licdn.com/dms/image/C4E03AQFqtLChP4wjNA/profile-displayphoto-shrink_800_800/0/1553317472543?e=1622073600&v=beta&t=Nc70Eulhrk6PLz4Vc-d3tMO3TZFHWao-3AejzMHEXyw"
+                                        src="/sebastian.jpeg"
                                         alt=""
+                                        layout="fill"
                                     />
                                 </div>
                                 <div className="text-lg leading-6 font-medium space-y-1">
@@ -180,11 +181,12 @@ export default function Home() {
                         {/* Review Card 2 */}
                         <li>
                             <div className="space-y-4">
-                                <div className="aspect-w-3 aspect-h-2">
-                                    <img
+                                <div className="aspect-w-3 aspect-h-3">
+                                    <Image
                                         className="object-cover shadow-lg rounded-lg"
-                                        src="https://media-exp1.licdn.com/dms/image/C4D35AQGxMgoJPQw7qw/profile-framedphoto-shrink_800_800/0/1603920413941?e=1616878800&v=beta&t=w1Eo7T0_SOtRdxx2MpaRDfIkk9K1DCvIFKJx65DS1YE"
+                                        src="/vital.jpeg"
                                         alt=""
+                                        layout="fill"
                                     />
                                 </div>
                                 <div className="text-lg leading-6 font-medium space-y-1">
@@ -210,11 +212,12 @@ export default function Home() {
                         {/* Review Card 3 */}
                         <li>
                             <div className="space-y-4">
-                                <div className="aspect-w-3 aspect-h-2">
-                                    <img
+                                <div className="aspect-w-3 aspect-h-3">
+                                    <Image
                                         className="object-cover shadow-lg rounded-lg"
-                                        src="https://scontent.feoh4-2.fna.fbcdn.net/v/t1.0-9/160617082_10159288548858259_5228251437238121054_o.jpg?_nc_cat=102&ccb=1-3&_nc_sid=09cbfe&_nc_eui2=AeG2NMuNf3siTxddFGBwfMHwwG4oq-wxaQzAbiir7DFpDJ_ZpJBEofdKfCHUjCIh-NxE78tMnOt5N_1cVo5V5ydy&_nc_ohc=POTgSQ1Oi-MAX98Mb8T&_nc_ht=scontent.feoh4-2.fna&oh=8bbc43daf83fca32c014c57a0225e2db&oe=6083398B"
+                                        src="/dani.jpeg"
                                         alt=""
+                                        layout="fill"
                                     />
                                 </div>
                                 <div className="text-lg leading-6 font-medium space-y-1">
@@ -225,7 +228,8 @@ export default function Home() {
                                 </div>
                                 <div className="text-lg">
                                     <p className="text-gray-500">
-                                        Scottie is the best.
+                                        Scottie is disciplined, consistent, and
+                                        highly creative.
                                     </p>
                                 </div>
                             </div>
@@ -234,11 +238,12 @@ export default function Home() {
                         {/* Review Card 4 */}
                         <li>
                             <div className="space-y-4">
-                                <div className="aspect-w-3 aspect-h-2">
-                                    <img
+                                <div className="aspect-w-3 aspect-h-3">
+                                    <Image
                                         className="object-cover shadow-lg rounded-lg"
-                                        src="https://scontent.feoh4-2.fna.fbcdn.net/v/t1.0-9/155835120_112897910852748_596132181960065261_o.jpg?_nc_cat=102&ccb=1-3&_nc_sid=09cbfe&_nc_eui2=AeFKljH7AeRTPbhlo8ghuVvljuAmyE-m8kWO4CbIT6byRWHNAAUUu04cBW8KAtWmsV-VC53LhZm2rV712O_EicD8&_nc_ohc=hdCUe1KTrT4AX8JCch5&_nc_ht=scontent.feoh4-2.fna&oh=7130d62e97566c3c1e9ab0ab5bef3af6&oe=60833669"
+                                        src="/cami.jpeg"
                                         alt=""
+                                        layout="fill"
                                     />
                                 </div>
                                 <div className="text-lg leading-6 font-medium space-y-1">
