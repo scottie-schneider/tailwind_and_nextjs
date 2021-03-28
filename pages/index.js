@@ -41,12 +41,22 @@ export default function Home() {
             </div>
             {/* End full header */}
 
-            <div className="relative bg-purple-700 w-full py-24">
-                <img
+            <div className="relative items-center flex flex-col bg-purple-700 w-full pt-12">
+                <div class="transform -translate-y-20 w-1/2 space-y-4">
+                    <div class="aspect-w-3 aspect-h-2">
+                        <img
+                            class="object-cover shadow-lg rounded-lg"
+                            src="/profile.JPG"
+                            alt=""
+                        />
+                    </div>
+                </div>
+
+                {/* <img
                     className=" transform -translate-y-40 object-cover w-1/2 mx-auto z-40 shadow-lg rounded-lg"
                     src="https://scontent.feoh1-1.fna.fbcdn.net/v/t1.0-9/165618272_280396350140021_2599161582639439013_o.jpg?_nc_cat=106&ccb=1-3&_nc_sid=730e14&_nc_eui2=AeG49l1QMAHdbavO-O9Ggxxo7qIe-ecnNH7uoh755yc0fkIiU05eyfl1HUYHRnt7_zEOUTx4mdzq_V6D-dM8RPZZ&_nc_ohc=Prs3khQiap0AX-yY75v&_nc_ht=scontent.feoh1-1.fna&oh=58da0e92f792bd35c8b060b7e07bd3b8&oe=608404A9"
                     alt=""
-                />
+                /> */}
                 <div className="absolute bottom-0 bg-gray-100 h-64 inset-x-0"></div>
                 <div className="relative mx-auto px-6 lg:px-0 container">
                     <h2 className="mb-10 text-purple-100 font-bold text-4xl lg:text-6xl">
