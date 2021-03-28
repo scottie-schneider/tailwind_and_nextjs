@@ -27,8 +27,8 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div className="h-screen relative flex bg-gradient-to-tr from-white to-gray-200 flex flex-col items-center justify-center">
-                <h2 className="flex text-5xl lg:text-6xl font-extrabold leading-snug mb-4">
-                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-teal-500">
+                <h2 className="flex text-4xl md:text-5xl lg:text-6xl font-extrabold leading-snug mb-4">
+                    <span className=" bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-teal-500">
                         Hello, I'm
                     </span>
                     <span className="bg-clip-text text-transparent bg-gradient-to-r from-teal-500 via-purple-600 to-purple-500">
@@ -49,7 +49,7 @@ export default function Home() {
                 />
                 <div className="absolute bottom-0 bg-gray-100 h-64 inset-x-0"></div>
                 <div className="relative mx-auto px-6 lg:px-0 container">
-                    <h2 className="mb-10 text-purple-100 font-bold text-6xl">
+                    <h2 className="mb-10 text-purple-100 font-bold text-4xl lg:text-6xl">
                         So who am I, anyway?
                     </h2>
                     <div className="flex space-x-16">
