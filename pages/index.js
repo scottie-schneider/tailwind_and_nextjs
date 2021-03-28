@@ -10,23 +10,14 @@ import resizeHeight from "../hooks/resizeHeight";
 // 6. fun element
 // 7. responsive
 export default function Home() {
-    resizeHeight();
-    const addLineBreaks = (string) =>
-        string.split("\n").map((text, index) => (
-            <code key={`${text}-${index}`}>
-                {text}
-                <br />
-            </code>
-        ));
-    let codeSnippet =
-        "function recurse() { \n     // function code\nrecurse();\n// function code\n}\nrecurse();";
+    // resizeHeight();
     return (
         <div className="text-gray-700 bg-gray-100 flex-col items-center justify-center min-h-screen py-2">
             <Head>
                 <title>Hello! I'm Scottie</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div className="h-screen relative flex bg-gradient-to-tr from-white to-gray-200 flex flex-col items-center justify-center">
+            <div className="h-96 relative flex bg-gradient-to-tr from-white to-gray-200 flex flex-col items-center justify-center">
                 <h2 className="flex text-4xl md:text-5xl lg:text-6xl font-extrabold leading-snug mb-4">
                     <span className=" bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-teal-500">
                         Hello, I'm
@@ -41,14 +32,15 @@ export default function Home() {
             </div>
             {/* End full header */}
 
-            <div className="relative items-center flex flex-col bg-purple-700 w-full pt-12">
-                <div class="transform -translate-y-20 w-1/2 space-y-4">
-                    <div class="aspect-w-3 aspect-h-2">
+            <div className="relative items-center flex flex-col bg-purple-700  w-full pt-12">
+                <div className="transform -translate-y-20 w-1/2 space-y-4">
+                    <div className="">
                         <Image
-                            class="object-fit shadow-lg rounded-lg"
+                            className="object-fit shadow-lg rounded-lg"
                             src="/profile.JPG"
                             alt=""
-                            layout="fill"
+                            width="400"
+                            height="300"
                         />
                     </div>
                 </div>
