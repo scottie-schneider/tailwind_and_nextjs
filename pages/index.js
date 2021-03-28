@@ -26,8 +26,11 @@ export default function Home() {
                         &nbsp;Scottie
                     </span>
                 </h2>
+                <p className="text-lg lg:text-2xl mb-2 text-gray-700">
+                    All things Product.
+                </p>
                 <p className="text-lg lg:text-2xl mb-12 text-gray-700">
-                    Product, Designer, Developer, Mover.
+                    Designer, Developer, Mover.
                 </p>
             </div>
             {/* End full header */}
