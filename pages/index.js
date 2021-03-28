@@ -44,10 +44,11 @@ export default function Home() {
             <div className="relative items-center flex flex-col bg-purple-700 w-full pt-12">
                 <div class="transform -translate-y-20 w-1/2 space-y-4">
                     <div class="aspect-w-3 aspect-h-2">
-                        <img
-                            class="object-cover shadow-lg rounded-lg"
+                        <Image
+                            class="object-fit shadow-lg rounded-lg"
                             src="/profile.JPG"
                             alt=""
+                            layout="fill"
                         />
                     </div>
                 </div>
