@@ -36,8 +36,8 @@ export default function Home() {
             {/* End full header */}
 
             <div className="relative items-center flex flex-col bg-purple-700  w-full pt-12">
-                <div className="transform -translate-y-20 w-1/2 space-y-4">
-                    <div className="">
+                <div className="transform  -translate-y-20 w-1/2 space-y-4">
+                    <div className="flex justify-center">
                         <Image
                             className="object-fit shadow-lg rounded-lg"
                             src="/profile.JPG"
